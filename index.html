@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Player</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div id="principal">
+        <audio id="player"></audio>
+        <p id="filename">Nenhum ficheiro selecionado</p>
+        <div id="butoes">
+            <button id="butao1" onclick="playAudio()">Play</button>
+            <button id="butao2" onclick="pauseAudio()">Pause</button>
+            <button id="butao3" onclick="increaseVolume()">Vol +</button>
+            <button id="butao4" onclick="decreaseVolume()">Vol -</button>
+        </div>
+        <div id="divinfo">
+            <p>Tempo atual: <span id="current-time">0:00</span></p>
+            <p>Status: <span id="status">Pause</span></p>
+            <p>Volume: <span id="volume">1.0</span></p>
+        </div>
+        <div>
+            <input type="file" id="fileInput" accept="audio/*" style="display: none;" />
+            <label for="fileInput" class="file-label">Escolher Ficheiro</label>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <footer>&copy; Tomás Afonso. 2024</footer>
+</body>
+</html>

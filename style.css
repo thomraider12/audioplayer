@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+#butao1 {
+    font-family: "Josefin Sans";
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+#butao2 {
+    font-family: "Josefin Sans";
+    background-color: red;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+#butao3 {
+    font-family: "Josefin Sans";
+    background-color: rgba(107, 107, 107, 0.815);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+#butao4 {
+    font-family: "Josefin Sans";
+    background-color: rgba(107, 107, 107, 0.815);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Altura de 100% do viewport */
+    margin: 0;
+    background-color: #e0e0e0; /* Cor de fundo para a página */
+}
+
+/* Define o estilo da div principal */
+#principal {
+    background-color: #f0f0f0; /* Cor de fundo cinza claro */
+    width: 80%;               /* Define a largura da div */
+    max-width: 800px;         /* Limita a largura máxima */
+    padding: 20px;            /* Espaçamento interno */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Adiciona sombra */
+    border-radius: 8px;       /* Arredonda os cantos */
+    text-align: center;       /* Centraliza o texto internamente */
+    box-sizing: border-box;   /* Inclui padding e border na largura total */
+}
+
+/* Estilo para o botão de seleção de arquivo */
+.file-label {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: "Josefin Sans";
+}
+
+/* Estilo para o nome do arquivo */
+#filename {
+    font-family: "Ubuntu";
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#divinfo {
+    font-family: "Josefin Sans";
+}
+
+/* Estilos para o footer fixo no fundo da página */
+footer {
+    font-family: "Ubuntu", sans-serif;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 10px 0;
+    box-shadow: 0px -1px 5px rgba(0, 0, 0, 0.1);
+    border-top: 1px solid #ddd;
+    z-index: 1000; /* Garante que o footer fique acima de outros elementos */
+}
