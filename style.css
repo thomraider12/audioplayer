@@ -104,7 +104,7 @@ body {
     max-width: 800px;         /* Limita a largura máxima */
     padding: 20px;            /* Espaçamento interno */
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Adiciona sombra */
-    border-radius: 8px;       /* Arredonda os cantos */
+    border-radius: 51px;       /* Arredonda os cantos */
     text-align: center;       /* Centraliza o texto internamente */
     box-sizing: border-box;   /* Inclui padding e border na largura total */
 }
