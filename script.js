@@ -61,3 +61,24 @@ fileInput.addEventListener('change', (event) => {
         filenameElement.textContent = 'Nenhum ficheiro selecionado!';
     }
 });
+
+const audioPlayer = document.getElementById("player");
+const seekSlider = document.getElementById("seekSlider");
+const currentTimeDisplay = document.getElementById("current-time");
+
+// Atualizar o slider enquanto a música toca
+audioPlayer.addEventListener("timeupdate", () => {
+    const value = (audioPlayer.currentTime / audioPlayer.duration) * 100;
+    seekSlider.value = value;
+
+    // Atualiza o display de tempo atual
+    const minutes = Math.floor(audioPlayer.currentTime / 60);
+    const seconds = Math.floor(audioPlayer.currentTime % 60);
+    currentTimeDisplay.textContent = `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+});
+
+// Mover o slider para mudar o tempo da música
+seekSlider.addEventListener("input", () => {
+    const seekTo = audioPlayer.duration * (seekSlider.value / 100);
+    audioPlayer.currentTime = seekTo;
+});

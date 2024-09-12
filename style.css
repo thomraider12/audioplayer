@@ -14,6 +14,10 @@
     cursor: pointer;
 }
 
+#seekSlider {
+    width: 100%; /* Ajusta o tamanho do slider */
+}
+
 #butao2 {
     font-family: "Josefin Sans";
     background-color: red;
